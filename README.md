@@ -2,16 +2,21 @@
   [![License](https://img.shields.io/badge/license-mit-blue.svg)
       ](https://opensource.org/licenses/mit)
   
-  Table of Content:
-  1. [Project Description](#Project-Description)
-  2. [Installation](#Installation)
-  3. [Deployment](#Deployment)
-  4. [Screenshots](#Screenshots)
 
-### Project Description:
+  ## Table of Contents
+* [Project Description](#Project-Description)
+* [Assets](#assets)
+* [Installation](#installation)
+* [Deployment](#Deployment)
+* [Screenshots](#Screenshots)
+* [Contributing](#contributing)
 
+
+## Project Description:
+`
 Purpose:
 Code-a-pedia's purpose is to help individuals to understand terms/slangs used in the field. This can help people going through imposter syndrome or people who want to know what a certain coding term does, basically giving a basic of something code related in a defintion so it is easy to read through and get your confidence on that term.
+`
 
       User Story:
       Our users are students/jobseekers/professionals in coding related background. This is a knowledge bank just for coding terms/definitions/slangs and strictly has no codes. This allows the individuals to understand/recall information talked about during lecture/interview/workspace.
@@ -43,13 +48,45 @@ Code-a-pedia's purpose is to help individuals to understand terms/slangs used in
       
       THEN I am presented with start page.
 
-### Installation:
-npm i,mysql2,sequelize,brycpt,dotenv,express,express-session,express-handlebars,connect-session-sequelize,eslint,eslint-config-prittier
 
-### Deployment:
+## Installation 
+The user should clone the repository from GitHub and download Node. 
+Run `npm i ` to install.
+Run `npm run seed ` to run the database.
+Run `npm start ` to start the Code-a-pedia .
 
-Github:
-https://github.com/pjsherpa/Code-a-pedia
 
-### Screenshots
+## Deployment:
+- Deployed link: https://github.com/pjsherpa/Code-a-pedia
 
+## Screenshots
+The following images demonstrate the web application's appearance and functionality:
+![pic](images/.png)
+
+## Contributing 
+Contributors should read the installation section. 
+
+
+
+## Technologies used
+- [Javascript](https://www.w3schools.com/jsref/default.asp)
+- [Node.js](https://nodejs.org/en/)
+- [mySQL](https://www.mysql.com/)
+- [JSON](https://www.json.org/json-en.html)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [MySQL2](https://www.npmjs.com/package/mysql2)
+- [InsomniaCore](https://insomnia.rest/products/insomnia)
+- [Handlebars.js](https://handlebarsjs.com/)
+- [Heroku](https://heroku.com/)
+- [Express.js](https://expressjs.com/)
+- [Sequelize](https://sequelize.org/)
+
+
+
+## Made by 
+```
+Phinjock Sherpa
+Kaihuan Huang
+Savannah Fausto
+
+```
