@@ -12,9 +12,14 @@ const loginFormHandler = async (event) => {
       });
   
       if (response.ok) {
+        localStorage.setItem('loggedIn', 'true');
         document.location.replace('/profile');
       } else {
-        alert(response.statusText);
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!'
+          })
       }
     }
   };
@@ -33,9 +38,14 @@ const loginFormHandler = async (event) => {
       });
   
       if (response.ok) {
+        localStorage.setItem('loggedIn', 'true');
         document.location.replace('/profile');
       } else {
-        alert(response.statusText);
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!'
+          })
       }
     }
   };
