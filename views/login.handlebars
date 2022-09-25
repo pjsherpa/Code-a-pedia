@@ -1,5 +1,5 @@
 <div class="row">
-            <!-- bootstrap signup -->
+            {{!-- <!-- bootstrap signup -->
             <div class="col-12 border border-dark py-2 my-2">
                 <form>
                     <h2>Don't Have an Account?</h2>
@@ -14,11 +14,11 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Sign Me Up!</button>
                 </form>
-            </div>
+            </div> --}}
             <!-- bootstrap login -->
             <div class="col-12 border border-dark py-2 my-2">
                 <form>
-                    <h2>Already Have an Account?</h2>
+                    {{!-- <h2>Already Have an Account?</h2> --}}
                     <h2>Log in here:</h2>
                     <div class="mb-3">
                         <label for="username-login" class="form-label">Email address</label>
@@ -29,6 +29,9 @@
                         <input type="password" class="form-control" id="password-login">
                     </div>
                     <button type="submit" class="btn btn-primary">Log Me In!</button>
+                    <a class="btn btn-outline-primary me-1 login-form" href="/signup" role="button">Sign Up Instead</a>
                 </form>
             </div>
         </div>
+
+<script src="/js/login.js"></script>
