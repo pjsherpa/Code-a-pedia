@@ -1,76 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code-A-Pedia</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
- 
-     {{!-- <script src="sweetalert2.min.js"></script> --}}
-    {{!-- <link rel="stylesheet" href="sweetalert2.min.css"> --}}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code-A-Pedia</title>
 
-    <script src="https://kit.fontawesome.com/e84ea757da.js" crossorigin="anonymous"></script>
-    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABABAAAAAAABEAEQAAAAABEQAREAAAABEQAAERAAABEQAAABEQABEQAAAAAREAAREAAAAREAAAERAAAREAAAABEQAREAAAAAARABEAAAAAAAEAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP2/AAD5nwAA8Y8AAOPHAADH4wAAj/EAAMfjAADjxwAA8Y8AAPmfAAD9vwAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+  {{!--
+  <script src="sweetalert2.min.js"></script> --}}
+  {{!--
+  <link rel="stylesheet" href="sweetalert2.min.css"> --}}
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/e84ea757da.js" crossorigin="anonymous"></script>
+  <link
+    href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABABAAAAAAABEAEQAAAAABEQAREAAAABEQAAERAAABEQAAABEQABEQAAAAAREAAREAAAAREAAAERAAAREAAAABEQAREAAAAAARABEAAAAAAAEAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP2/AAD5nwAA8Y8AAOPHAADH4wAAj/EAAMfjAADjxwAA8Y8AAPmfAAD9vwAA//8AAP//AAD//wAA"
+    rel="icon" type="image/x-icon" />
 </head>
+
 <body>
-    <!-- bootstrap navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Code-A-Pedia</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-            <li><div class="container">
+  <!-- bootstrap navbar -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Code-A-Pedia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
 
-                    <div class="height d-flex justify-content-start align-items-start">
+          <li class="nav-link"><a href="/dashboard/new">Contribute</a></li>
+          <li class="col">
+            <a class="btn btn-outline-primary" id="logout-link" href="#" role="button">Log Out</a>
+          </li>
 
-                      <div class="col-md-12">
 
-                        <div class="search">
-                          
-                          <input type="text" class="form" placeholder="Have a question? Ask Now">
-                          <button class="btn btn-primary"><i class="fa fa-search"></i></button>
-                        </div>
-                        
-                      </div>
-                      
-                    </div>
-                </div>
-                                
-                <li class="nav-link"><a href="/dashboard/new">Contribute</a></li>
-              <li class="col">
-                <a class="btn btn-outline-primary" id="logout-link" href="#" role="button">Log Out</a>
-              </li>
-            
-              
-            </ul>
-            
-            {{!-- Creating a search bar with js and need to display code definition --}}
+        </ul>
 
-          </div>
-          
-        </div>
-        
-      </nav>
+        {{!-- Creating a search bar with js and need to display code definition --}}
 
-{{!-- this is where everything else should display --}}
-      {{{body}}}
+      </div>
+
+    </div>
+
+  </nav>
+
+  {{!-- this is where everything else should display --}}
+  {{{body}}}
 
 
   <footer id="sticky-footer" class="fixed-bottom flex-shrink-0 py-4 bg-dark text-white-50">
     <div class="container text-center">
-      <small>Copyright &copy;  <a href="https://github.com/pjsherpa/Code-a-pedia">Code-A-Pedia</a></small>
+      <small>Copyright &copy; <a href="https://github.com/pjsherpa/Code-a-pedia">Code-A-Pedia</a></small>
     </div>
   </footer>
- 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    {{!-- <script src="sweetalert2.all.min.js"></script> --}}
-   <script src="/js/logout.js"></script>
-    <script src="/js/search.js"></script>;
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  {{!--
+  <script src="sweetalert2.all.min.js"></script> --}}
+  <script src="/js/logout.js"></script>
+
 </body>
 
 </html>
