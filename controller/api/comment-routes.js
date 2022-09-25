@@ -11,9 +11,9 @@ router.get("/", async (req, res) => {
 
     console.log(comments);
     //need to change accroding to handlebar same for line 15
-    res.render("change according to handlebar template", {
+    res.render("comments", {
       comments,
-      layout: "main",
+      layout: "dashboard",
       logged_in: true,
     });
   } catch (err) {

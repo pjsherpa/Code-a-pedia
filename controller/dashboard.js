@@ -13,13 +13,37 @@ router.get("/", withAuth, async (req, res) => {
     const posts = postData.map((post) => post.get({ plain: true }));
     console.log(posts);
 
-    res.render("need to change accroding to handlebar--PJ", {
+    res.render("allpost", {
       posts,
-      layout: "need to change accroding to handlebar--PJ",
+      layout: "dashboard",
       loggedIn: true,
     });
   } catch (err) {
     res.status(500).json(err);
+  }
+});
+
+router.get("/new", withAuth, (req, res) => {
+  res.render("jsnewposts", {
+    layout: "dashboard",
+  });
+});
+
+router.get("/edit/:id", withAuth, async (req, res) => {
+  try {
+    const postData = await Post.findByPk(req.params.id);
+    if (postData) {
+      const post = postData.get({ plain: true });
+      console.log(post);
+      res.render("editposts", {
+        layout: "dashboard",
+        post,
+      });
+    } else {
+      res.status(404).end();
+    }
+  } catch (err) {
+    res.redirect("login");
   }
 });
 
