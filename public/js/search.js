@@ -9,5 +9,3 @@ const dataFilter = (value) => {
 new mdb.Autocomplete(basicAutocomplete, {
   filter: dataFilter,
 });
-
-<script src="/js/search.js"></script>;
