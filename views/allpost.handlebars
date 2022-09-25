@@ -1,19 +1,14 @@
-{{!-- need to change --}}
+<br>
+<br>
 
-<div class="posts list-group">
+<div class="container">
   {{#each posts}}
- <article class="card">
-  <a class ="card-header flex-row justify-space-between" href="/dashboard/edit/{{id}}">
-  <span>{{title}}</span>
-  
-    <span>{{format_date createdAt}}</span>
-      </a>
-      <div class="card-body">
-      {{body}}
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>{{title}}</h3>
+        <a class ="card-header flex-row justify-space-between" href="/dashboard/edit/{{id}}">✍️</a>
+          {{body}}
     </div>
-    </article>
-    
+ </div>
      {{/each}}
   </div>
-
-  
