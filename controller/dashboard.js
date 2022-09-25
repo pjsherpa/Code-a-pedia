@@ -3,6 +3,7 @@ const { Post, User } = require("../models");
 const withAuth = require("../utils/auth");
 
 // localhost:3001/dashboard/
+
 router.get("/", withAuth, async (req, res) => {
   console.log(req.session);
   try {
