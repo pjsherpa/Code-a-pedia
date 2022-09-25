@@ -1,0 +1,14 @@
+<br>
+<br>
+
+<div class="container">
+  {{#each posts}}
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>{{title}}</h3>
+        <a class ="card-header flex-row justify-space-between" href="/dashboard/edit/{{id}}">✍️</a>
+          {{body}}
+    </div>
+ </div>
+     {{/each}}
+  </div>
