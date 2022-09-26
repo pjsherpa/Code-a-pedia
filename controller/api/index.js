@@ -7,4 +7,5 @@ const postRoutes = require("./post-routes");
 router.use("/user", userRouter);
 router.use("/post", postRoutes);
 
+
 module.exports = router;
