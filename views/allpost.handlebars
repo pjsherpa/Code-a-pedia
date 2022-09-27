@@ -4,11 +4,14 @@
 <div class="container">
   {{#each posts}}
   <div class="row">
-    <div class="col-sm-4">
+    <div class="card">
       <span>{{title}}</span>
-      <span>{{format_date createdAt}}</span>
-      <a class="card-header flex-row justify-space-between" href="/dashboard/edit/{{id}}">✍️</a>
-      {{body}}
+      <span><a class="card-header flex-row justify-space-between" href="/dashboard/edit/{{id}}">✍️</a> {{format_date createdAt}} </span>
+       <pre>
+        <code>
+          {{body}}
+        </code>
+      </pre>
     </div>
   </div>
   {{/each}}
