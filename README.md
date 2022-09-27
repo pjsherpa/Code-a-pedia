@@ -9,12 +9,11 @@
 * [Installation](#installation)
 * [Deployment](#Deployment)
 * [Screenshots](#Screenshots)
-* [Contributing](#contributing)
+* [Technologies](#technologies)
 
 
 ## Project Description:
 `
-Purpose:
 Code-a-pedia's purpose is to help individuals to understand terms/slangs used in the field. This can help people going through imposter syndrome or people who want to know what a certain coding term does, basically giving a basic of something code related in a defintion so it is easy to read through and get your confidence on that term.
 `
 
@@ -58,14 +57,11 @@ Run `npm start ` to start the Code-a-pedia .
 
 ## Deployment:
 - Deployed link: https://github.com/pjsherpa/Code-a-pedia
+- Heroku link: https://codeapedia.herokuapp.com/yourDevelopers
 
 ## Screenshots
 The following images demonstrate the web application's appearance and functionality:
 ![pic](images/.png)
-
-## Contributing 
-Contributors should read the installation section. 
-
 
 
 ## Technologies used
