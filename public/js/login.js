@@ -1,9 +1,7 @@
 const loginFormHandler = async (event) => {
   event.preventDefault();
-
   const username = document.querySelector("#username-login").value.trim();
   const password = document.querySelector("#password-login").value.trim();
-
   if (username && password) {
     const response = await fetch("/api/user", {
       method: "POST",
@@ -19,16 +17,14 @@ const loginFormHandler = async (event) => {
       document.location.replace("/dashboard");
     } else {
       console.error();
-      alert("Failed to login");
-      // Swal.fire({
-      //   icon: "error",
-      //   title: "Oops...",
-      //   text: "Failed to login",
-      // });
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Failed to login",
+      });
     }
   }
 };
-
 document
   .querySelector("#login-form")
   .addEventListener("submit", loginFormHandler);
