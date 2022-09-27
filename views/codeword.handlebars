@@ -4,9 +4,13 @@
 <div class="container">
   {{#each posts}}
   <div class="row">
-    <div class="col-sm-4">
+    <div class="card">
       <h3>{{title}}</h3>
-      {{body}}
+      <pre>
+        <code>
+          {{body}}
+        </code>
+      </pre>
     </div>
   </div>
   {{/each}}
