@@ -5,14 +5,9 @@
   {{#each posts}}
   <div class="row">
     <div class="card">
-      <h3>{{title}}</h3>
-      <pre>
+      <span>{{title}}</span>
+       <pre>
         <code class="language-js">
-          {{!-- if ((age >= 14) &amp;&amp; (age < 19)) {        // logical condition
-      status = "Eligible.";               // executed if condition is true
-      } else {                                // else block is optional
-      status = "Not eligible.";           // executed if condition is false
-      } --}}
           {{body}}
         </code>
       </pre>
