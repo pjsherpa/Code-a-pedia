@@ -7,7 +7,6 @@ const { Post, User } = require("../models");
 const withAuth = require("../utils/auth");
 
 //Get all posts in homepage
-
 router.get("/", async (req, res) => {
   try {
        res.render("home", {
