@@ -19,8 +19,8 @@ const loginFormHandler = async (event) => {
       console.error();
       Swal.fire({
         icon: "error",
-        title: "Oops...",
-        text: "Failed to login",
+        title: "Failed to login: wrong username or password",
+        
       });
     }
   }
