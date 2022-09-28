@@ -19,8 +19,8 @@ const signupFormHandler = async (event) => {
     } else {
       Swal.fire({
         icon: "error",
-        title: "Oops...",
-        text: "Something went wrong!",
+        title: "Please choose a password with at least 8 characters",
+        
       });
     }
   }
