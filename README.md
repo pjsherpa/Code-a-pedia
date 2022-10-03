@@ -17,35 +17,38 @@
 Code-a-pedia's purpose is to help individuals to understand terms/slangs used in the field. This can help people going through imposter syndrome or people who want to know what a certain coding term does, basically giving a basic of something code related in a defintion so it is easy to read through and get your confidence on that term.
 `
 
-      User Story:
-      Our users are students/jobseekers/professionals in coding related background. This is a knowledge bank just for coding terms/definitions/slangs. This allows the individuals to understand/recall information talked about during lecture/interview/workspace.
+User Story:
+Our users are students/jobseekers/professionals in coding related background. This is a knowledge bank just for coding        terms/definitions/slangs. This allows the individuals to understand/recall information talked about during lecture/interview/workspace.
       
-      Acceptance Criteria:
+Acceptance Criteria:
       GIVEN a Navbar with Navbar-items Home/Your Developer and option to sign in or sign up.
 
       WHEN I click on Your Developer
 
       A brief information is provided about Your Developer who created Code-pedia.
-      
       WHEN I click on Sign up.
       
       THEN a template appears a template appears to input information.
       
       WHEN I click on Sign in after registration.
       
-      THEN a form input appears for username and password. If wrong password or username from registration, webpage will not proceed forward. Once username and password registered is used then will have access to webpage.
+      THEN a form input appears for username and password. If wrong password or username from registration, webpage will not proceed               forward. Once username and password registered is used then will have access to webpage.
       
-      WHEN Singed in.
+      WHEN Signed in. 
        
-      THEN a Navbar has added Navbar items, Javascript/Python/Slangs/Singout.
+      THEN a Navbar has added Navbar items,code-add and Signout.
          
-      WHEN Navbar item clicked for Javascript/Python/Slangs.
+      WHEN Navbar item clicked for code-word and code-e.
       
-      THEN I am presented with various terms and definitions. When clicked on terms a card appears to present definition.
+      THEN I am presented with various terms,definitions or codes. When clicked on code-e the same definitions has an edit button. When           clicked shows another template to edit or delete the term/code.
       
-      WHEN I click on singout(ref:img1)
+      WHEN I click on code-add.
       
-      THEN I am presented with start page.
+      THEN I'am presented with a new page to write Code Word Name and definition.
+      
+      WHEN I click on signout.
+      
+      THEN I am presented with home page.
 
 
 ## Installation 
