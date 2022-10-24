@@ -1,17 +1,17 @@
 const loginFormHandler = async (event) => {
   event.preventDefault();
-  const username = document.querySelector("#username-login").value.trim();
-  const password = document.querySelector("#password-login").value.trim();
-  if (username && password) {
-    const response = await fetch("/api/user", {
+  const usernameEl = document.querySelector("#username-login");
+  const passwordEl = document.querySelector("#password-login");
+  if (usernameEl && passwordEl) {
+    const response = await fetch("/api/user/login", {
       method: "POST",
       body: JSON.stringify({
-        username,
-        password
+        username: usernameEl.value,
+        password: passwordEl.value,
       }),
       headers: { "Content-Type": "application/json" },
     });
-    console.log("FIND THIS", username, password);
+    console.log("FIND THIS", usernameEl.value, passwordEl.value);
     if (response.ok) {
       console.log("response", response);
       document.location.replace("/dashboard");
@@ -20,7 +20,6 @@ const loginFormHandler = async (event) => {
       Swal.fire({
         icon: "error",
         title: "Failed to login: wrong username or password",
-        
       });
     }
   }
